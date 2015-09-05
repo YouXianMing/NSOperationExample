@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C4EE791B9B36C800F2CE15 /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C4EE781B9B36C800F2CE15 /* ConcurrentOperation.m */; };
 		10D87C211B98DD9E002164A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D87C201B98DD9E002164A7 /* main.m */; };
 		10D87C241B98DD9E002164A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D87C231B98DD9E002164A7 /* AppDelegate.m */; };
 		10D87C271B98DD9E002164A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D87C261B98DD9E002164A7 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		10D87C2C1B98DD9E002164A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D87C2B1B98DD9E002164A7 /* Images.xcassets */; };
 		10D87C2F1B98DD9E002164A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D87C2D1B98DD9E002164A7 /* LaunchScreen.xib */; };
 		10D87C3B1B98DD9E002164A7 /* NSOperationExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D87C3A1B98DD9E002164A7 /* NSOperationExampleTests.m */; };
+		10D87C461B98DE1A002164A7 /* NonconcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D87C451B98DE1A002164A7 /* NonconcurrentOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10C4EE771B9B36C800F2CE15 /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentOperation.h; sourceTree = "<group>"; };
+		10C4EE781B9B36C800F2CE15 /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentOperation.m; sourceTree = "<group>"; };
 		10D87C1B1B98DD9E002164A7 /* NSOperationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSOperationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D87C1F1B98DD9E002164A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D87C201B98DD9E002164A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		10D87C341B98DD9E002164A7 /* NSOperationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOperationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D87C391B98DD9E002164A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D87C3A1B98DD9E002164A7 /* NSOperationExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationExampleTests.m; sourceTree = "<group>"; };
+		10D87C441B98DE1A002164A7 /* NonconcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonconcurrentOperation.h; sourceTree = "<group>"; };
+		10D87C451B98DE1A002164A7 /* NonconcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonconcurrentOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				10D87C231B98DD9E002164A7 /* AppDelegate.m */,
 				10D87C251B98DD9E002164A7 /* ViewController.h */,
 				10D87C261B98DD9E002164A7 /* ViewController.m */,
+				10D87C441B98DE1A002164A7 /* NonconcurrentOperation.h */,
+				10D87C451B98DE1A002164A7 /* NonconcurrentOperation.m */,
+				10C4EE771B9B36C800F2CE15 /* ConcurrentOperation.h */,
+				10C4EE781B9B36C800F2CE15 /* ConcurrentOperation.m */,
 				10D87C281B98DD9E002164A7 /* Main.storyboard */,
 				10D87C2B1B98DD9E002164A7 /* Images.xcassets */,
 				10D87C2D1B98DD9E002164A7 /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C4EE791B9B36C800F2CE15 /* ConcurrentOperation.m in Sources */,
 				10D87C271B98DD9E002164A7 /* ViewController.m in Sources */,
 				10D87C241B98DD9E002164A7 /* AppDelegate.m in Sources */,
+				10D87C461B98DE1A002164A7 /* NonconcurrentOperation.m in Sources */,
 				10D87C211B98DD9E002164A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +430,7 @@
 				10D87C401B98DD9E002164A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10D87C411B98DD9E002164A7 /* Build configuration list for PBXNativeTarget "NSOperationExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				10D87C431B98DD9E002164A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
